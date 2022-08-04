@@ -22,7 +22,7 @@ To reproduce the results, clone this project locally and open **ECCA_code.Rproj*
 **SOC.R** - Contains functions of performing SOC algorithm for updating individual score matrices.
 
 ### Example
-To illustrate application of ECCA, we will simulate data based on ECCA model using scripts from **data_generator.R** (located in **Simulation** folder)
+To illustrate application of ECCA, we will simulate data based on ECCA model using scripts from **data_generator.R** (located in **Simulation** folder).
 
 ```{r}
 rm(list = ls())
@@ -118,18 +118,18 @@ Each folder represents one setting in the paper. To be specific: **GG_Simulation
 ## 3. Applications
 *Application* folder contains the necessary files to reproduce the results shown in application section. 
 
-**Mouse** folder - code for analyses of data from nutrigenomic study of mice
+**Mouse** folder contains code for analyses of data from nutrigenomic study of mice.
 
 - *Rank* folder includes the files for determining the total rank and joint rank based on cross-validation method and principal angles. The main file is *RankEst.R*.
 - *Apply_ECCA.R* runs ECCA on the nutrimouse data and stores results at *ECCA_result.RData*.
 - *PlotCluster.R* file uses ECCA joint and individual results and illustrates the low-dimensional representation of 40 mice on the ecca joint/individual basis. The graphs are stored at *Figures* folder.
-- *Compare_ECCA_vs_GAS.* files provides comparison of two methods with respect to genotype and diet separation
+- *Compare_ECCA_vs_GAS.* files provides comparison of two methods with respect to genotype and diet separation.
 
 **DeMixT_Timer_Open** folder - scripts for analyses of data from cellular heterogeneity study. 
 
 - *RunECCA.R* call to ECCA on selected ranks
 - *DeMixT_Timer_Reproduce_Downstream.pdf* rendered Rmd output of downstream analyses.
-To replicate, the original sequencing data for prostate cancer patients can be obtained from [the Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov/), see [Wang et al. 2018](https://doi.org/10.1016/j.isci.2018.10.028) for DeMixT application, and [Li et al., 2017](https://doi.org/10.1158/0008-5472.CAN-17-0307) for TIMER application
+To replicate, the original sequencing data for prostate cancer patients can be obtained from [the Genomic Data Commons Data Portal](https://portal.gdc.cancer.gov/), see [Wang et al. 2018](https://doi.org/10.1016/j.isci.2018.10.028) for DeMixT application, and [Li et al., 2017](https://doi.org/10.1158/0008-5472.CAN-17-0307) for TIMER application.
 
 <!--**ItsTimer** folder includes code for analyses of Tumor heterogeneity in prostate cancer.
 
